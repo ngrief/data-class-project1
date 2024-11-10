@@ -21,3 +21,28 @@ We used a dataset created by a data sciences student (using InsideAirbnb.com), t
 - We removed rows for which site availability was 0/365 days and for which site price was $0.
 - We edited location column names for clarity and neater visualizations: (‘neighbourhood_groups’ to ‘metro’ and ‘neighborhood’ to ‘city’); changed state names to an abbreviations; concatenated metro and state abbreviation.
 - We formatted date information as dates were in two different formats.
+
+## Analysis
+
+
+
+TIPS from Brandon
+# data_class_project_1
+My team decided to investigate...
+
+# How we got our data
+Data source, info, etc
+
+# Analysis
+We found this
+- Point 1
+- Point 2
+- Point
+
+1. point 1
+1. point 2
+1. 
+
+![my image description](/image/my_image.png)
+
+My text
