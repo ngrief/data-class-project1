@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_672d43089966827a6642a9ee6be0a897 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_672d43089966827a6642a9ee6be0a897" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_672d43089966827a6642a9ee6be0a897 = L.map(
+                "map_672d43089966827a6642a9ee6be0a897",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d42553e217fe39b30ec8b88dd0b8e17 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4d42553e217fe39b30ec8b88dd0b8e17.addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var marker_0faa1213fd661c73c31bfccc9be37128 = L.marker(
+                [36.9741, -122.0308],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_95601baaba544d598af9727337815dbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0faa1213fd661c73c31bfccc9be37128.setIcon(icon_95601baaba544d598af9727337815dbb);
+        
+    
+        var popup_4c2629425181dc84bd6b9dea355adcf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f0ec2bbd688926b06fcff902de54041 = $(`<div id="html_2f0ec2bbd688926b06fcff902de54041" style="width: 100.0%; height: 100.0%;">Santa Cruz<br>Average Price: $287.24</div>`)[0];
+                popup_4c2629425181dc84bd6b9dea355adcf0.setContent(html_2f0ec2bbd688926b06fcff902de54041);
+            
+        
+
+        marker_0faa1213fd661c73c31bfccc9be37128.bindPopup(popup_4c2629425181dc84bd6b9dea355adcf0)
+        ;
+
+        
+    
+    
+            var marker_6402e327df18d911a467dfe99202355d = L.marker(
+                [40.8448, -73.8648],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_75f5cc6a663a4b4f62670ae63c4cd934 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6402e327df18d911a467dfe99202355d.setIcon(icon_75f5cc6a663a4b4f62670ae63c4cd934);
+        
+    
+        var popup_b4166b53897d9ea1929d3ab2b4d639d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d07bc3a2e9d3244b86d535c04df8dab = $(`<div id="html_2d07bc3a2e9d3244b86d535c04df8dab" style="width: 100.0%; height: 100.0%;">Bronx<br>Average Price: $94.20</div>`)[0];
+                popup_b4166b53897d9ea1929d3ab2b4d639d9.setContent(html_2d07bc3a2e9d3244b86d535c04df8dab);
+            
+        
+
+        marker_6402e327df18d911a467dfe99202355d.bindPopup(popup_b4166b53897d9ea1929d3ab2b4d639d9)
+        ;
+
+        
+    
+    
+            var marker_5d83a5fd46890d1a41c7763b6c19d8df = L.marker(
+                [40.6782, -73.9442],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_3e3cc69652dcdc3cb8ea580afb06f89a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5d83a5fd46890d1a41c7763b6c19d8df.setIcon(icon_3e3cc69652dcdc3cb8ea580afb06f89a);
+        
+    
+        var popup_eed3de84aeed46b93b6fce6248e8b8ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53dba8d39ce854e75b84d258c6001e1f = $(`<div id="html_53dba8d39ce854e75b84d258c6001e1f" style="width: 100.0%; height: 100.0%;">Brooklyn<br>Average Price: $127.70</div>`)[0];
+                popup_eed3de84aeed46b93b6fce6248e8b8ac.setContent(html_53dba8d39ce854e75b84d258c6001e1f);
+            
+        
+
+        marker_5d83a5fd46890d1a41c7763b6c19d8df.bindPopup(popup_eed3de84aeed46b93b6fce6248e8b8ac)
+        ;
+
+        
+    
+    
+            var marker_9e6cfce01366e45008ab82e2eff4b4b9 = L.marker(
+                [26.1901, -80.3659],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_c751bffe2298040119477ea2258d0b6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9e6cfce01366e45008ab82e2eff4b4b9.setIcon(icon_c751bffe2298040119477ea2258d0b6b);
+        
+    
+        var popup_6963dc154cda6ae2239fbe85156414e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e73da2b436ef9ea291d043a54813327 = $(`<div id="html_0e73da2b436ef9ea291d043a54813327" style="width: 100.0%; height: 100.0%;">Broward County<br>Average Price: $195.23</div>`)[0];
+                popup_6963dc154cda6ae2239fbe85156414e3.setContent(html_0e73da2b436ef9ea291d043a54813327);
+            
+        
+
+        marker_9e6cfce01366e45008ab82e2eff4b4b9.bindPopup(popup_6963dc154cda6ae2239fbe85156414e3)
+        ;
+
+        
+    
+    
+            var marker_7f33c7f597ea1fb9f4bee54d49a18cac = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_79865155eb7bec9ba88b9db664ce39c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7f33c7f597ea1fb9f4bee54d49a18cac.setIcon(icon_79865155eb7bec9ba88b9db664ce39c4);
+        
+    
+        var popup_9a5e9c7aae7868c515b1250802442e1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8596d17bfdfd73cca43d930e154d4131 = $(`<div id="html_8596d17bfdfd73cca43d930e154d4131" style="width: 100.0%; height: 100.0%;">Chicago<br>Average Price: $154.75</div>`)[0];
+                popup_9a5e9c7aae7868c515b1250802442e1c.setContent(html_8596d17bfdfd73cca43d930e154d4131);
+            
+        
+
+        marker_7f33c7f597ea1fb9f4bee54d49a18cac.bindPopup(popup_9a5e9c7aae7868c515b1250802442e1c)
+        ;
+
+        
+    
+    
+            var marker_fcd23b07e0fbf55db9bfd3a1d2fa38e5 = L.marker(
+                [36.0395, -115.1645],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_a0d1a4de18eb3e0ff9537d65354c242d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fcd23b07e0fbf55db9bfd3a1d2fa38e5.setIcon(icon_a0d1a4de18eb3e0ff9537d65354c242d);
+        
+    
+        var popup_bc9875505a5897e658bb9e539301e328 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_affcc76ba3050fba9c183df1b9539790 = $(`<div id="html_affcc76ba3050fba9c183df1b9539790" style="width: 100.0%; height: 100.0%;">Clark County<br>Average Price: $200.21</div>`)[0];
+                popup_bc9875505a5897e658bb9e539301e328.setContent(html_affcc76ba3050fba9c183df1b9539790);
+            
+        
+
+        marker_fcd23b07e0fbf55db9bfd3a1d2fa38e5.bindPopup(popup_bc9875505a5897e658bb9e539301e328)
+        ;
+
+        
+    
+    
+            var marker_1f9845da3b91fb73672e76663ef27e8c = L.marker(
+                [20.7984, -156.3319],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_ca11764abf649333bfed37481ef49ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f9845da3b91fb73672e76663ef27e8c.setIcon(icon_ca11764abf649333bfed37481ef49ada);
+        
+    
+        var popup_88d4441c6cf3181063bc95274c246a7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_483d0e1463a3afd9015e26ce8fc70a2f = $(`<div id="html_483d0e1463a3afd9015e26ce8fc70a2f" style="width: 100.0%; height: 100.0%;">Hawaii<br>Average Price: $272.64</div>`)[0];
+                popup_88d4441c6cf3181063bc95274c246a7c.setContent(html_483d0e1463a3afd9015e26ce8fc70a2f);
+            
+        
+
+        marker_1f9845da3b91fb73672e76663ef27e8c.bindPopup(popup_88d4441c6cf3181063bc95274c246a7c)
+        ;
+
+        
+    
+    
+            var marker_4e5782f133f787f834b5d6a7fc8f4caa = L.marker(
+                [21.3069, -157.8583],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_0bb1f22ed3019031b54b89df9f7ef8f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e5782f133f787f834b5d6a7fc8f4caa.setIcon(icon_0bb1f22ed3019031b54b89df9f7ef8f8);
+        
+    
+        var popup_0f3ca21527cc46740b2fab32a3f1fd31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f746195fef9b179d0839d0cd2f53f409 = $(`<div id="html_f746195fef9b179d0839d0cd2f53f409" style="width: 100.0%; height: 100.0%;">Honolulu<br>Average Price: $257.66</div>`)[0];
+                popup_0f3ca21527cc46740b2fab32a3f1fd31.setContent(html_f746195fef9b179d0839d0cd2f53f409);
+            
+        
+
+        marker_4e5782f133f787f834b5d6a7fc8f4caa.bindPopup(popup_0f3ca21527cc46740b2fab32a3f1fd31)
+        ;
+
+        
+    
+    
+            var marker_a65450d2340f5a7018906f3b89ef280c = L.marker(
+                [22.0964, -159.5261],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_74b74f54253e1783e0d267e0a6dca00f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a65450d2340f5a7018906f3b89ef280c.setIcon(icon_74b74f54253e1783e0d267e0a6dca00f);
+        
+    
+        var popup_cf83994752582e5ab00206222d0f072c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3a12a3d8e1f4a04923bee10dea5b8ae = $(`<div id="html_b3a12a3d8e1f4a04923bee10dea5b8ae" style="width: 100.0%; height: 100.0%;">Kauai<br>Average Price: $324.68</div>`)[0];
+                popup_cf83994752582e5ab00206222d0f072c.setContent(html_b3a12a3d8e1f4a04923bee10dea5b8ae);
+            
+        
+
+        marker_a65450d2340f5a7018906f3b89ef280c.bindPopup(popup_cf83994752582e5ab00206222d0f072c)
+        ;
+
+        
+    
+    
+            var marker_0b6b9c0e8baf03a17807ff818043ee0e = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_15cfcaeaad9f8f54560e1582c2ebfebc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0b6b9c0e8baf03a17807ff818043ee0e.setIcon(icon_15cfcaeaad9f8f54560e1582c2ebfebc);
+        
+    
+        var popup_52cde9c46e89a6293da8c5a4631a057e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa52e19602240c924b9135ff92a7d0a3 = $(`<div id="html_fa52e19602240c924b9135ff92a7d0a3" style="width: 100.0%; height: 100.0%;">Los Angeles<br>Average Price: $235.00</div>`)[0];
+                popup_52cde9c46e89a6293da8c5a4631a057e.setContent(html_fa52e19602240c924b9135ff92a7d0a3);
+            
+        
+
+        marker_0b6b9c0e8baf03a17807ff818043ee0e.bindPopup(popup_52cde9c46e89a6293da8c5a4631a057e)
+        ;
+
+        
+    
+    
+            var marker_0a71831ce08645a819416884a5ff2098 = L.marker(
+                [40.7831, -73.9712],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_9c3699afdea5104a2a1919455e60cd0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0a71831ce08645a819416884a5ff2098.setIcon(icon_9c3699afdea5104a2a1919455e60cd0e);
+        
+    
+        var popup_8fd49545d814489b2f73f4143f7def01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_413f55cf5375e57fd83cad4caf59a39c = $(`<div id="html_413f55cf5375e57fd83cad4caf59a39c" style="width: 100.0%; height: 100.0%;">Manhattan<br>Average Price: $192.06</div>`)[0];
+                popup_8fd49545d814489b2f73f4143f7def01.setContent(html_413f55cf5375e57fd83cad4caf59a39c);
+            
+        
+
+        marker_0a71831ce08645a819416884a5ff2098.bindPopup(popup_8fd49545d814489b2f73f4143f7def01)
+        ;
+
+        
+    
+    
+            var marker_b65f105fceec3e74aabbc8c3957302cb = L.marker(
+                [20.7984, -156.3319],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_1a2ba933f8215d8a1cf984c9d4403c87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b65f105fceec3e74aabbc8c3957302cb.setIcon(icon_1a2ba933f8215d8a1cf984c9d4403c87);
+        
+    
+        var popup_f37128c9aa44f773af1b92f5a3545b51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36365fcbc3b9f24155412fb952e691b7 = $(`<div id="html_36365fcbc3b9f24155412fb952e691b7" style="width: 100.0%; height: 100.0%;">Maui<br>Average Price: $336.44</div>`)[0];
+                popup_f37128c9aa44f773af1b92f5a3545b51.setContent(html_36365fcbc3b9f24155412fb952e691b7);
+            
+        
+
+        marker_b65f105fceec3e74aabbc8c3957302cb.bindPopup(popup_f37128c9aa44f773af1b92f5a3545b51)
+        ;
+
+        
+    
+    
+            var marker_d29df9a942deb23765825a92d987c426 = L.marker(
+                [36.1627, -86.7816],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_5fdad28e7b1ea6db58d6fa9ce79a2f90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d29df9a942deb23765825a92d987c426.setIcon(icon_5fdad28e7b1ea6db58d6fa9ce79a2f90);
+        
+    
+        var popup_f89cfb38ab362464de310c40a1090b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3383798d04737c77f75ff1bb3b167cb1 = $(`<div id="html_3383798d04737c77f75ff1bb3b167cb1" style="width: 100.0%; height: 100.0%;">Nashville<br>Average Price: $214.51</div>`)[0];
+                popup_f89cfb38ab362464de310c40a1090b14.setContent(html_3383798d04737c77f75ff1bb3b167cb1);
+            
+        
+
+        marker_d29df9a942deb23765825a92d987c426.bindPopup(popup_f89cfb38ab362464de310c40a1090b14)
+        ;
+
+        
+    
+    
+            var marker_a0ea5697b80abec050c6a2bc4951d20d = L.marker(
+                [40.7282, -73.7949],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_31bd01c3d0f6b3dad450ba4761466a0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a0ea5697b80abec050c6a2bc4951d20d.setIcon(icon_31bd01c3d0f6b3dad450ba4761466a0f);
+        
+    
+        var popup_8da2869e8a5ef334d7efd3edb5a7ce69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2737e69f3c1e3a9639f575367823b10a = $(`<div id="html_2737e69f3c1e3a9639f575367823b10a" style="width: 100.0%; height: 100.0%;">Queens<br>Average Price: $108.56</div>`)[0];
+                popup_8da2869e8a5ef334d7efd3edb5a7ce69.setContent(html_2737e69f3c1e3a9639f575367823b10a);
+            
+        
+
+        marker_a0ea5697b80abec050c6a2bc4951d20d.bindPopup(popup_8da2869e8a5ef334d7efd3edb5a7ce69)
+        ;
+
+        
+    
+    
+            var marker_46b05f5e57f327811636a0877fa86170 = L.marker(
+                [37.3541, -121.9552],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_b7209f22c36e9f1a6f2237aae94fc172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_46b05f5e57f327811636a0877fa86170.setIcon(icon_b7209f22c36e9f1a6f2237aae94fc172);
+        
+    
+        var popup_d1464ebcd6387cb8ea5e384693c4f867 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd164f821c5a9f3ab06614af8aab559c = $(`<div id="html_cd164f821c5a9f3ab06614af8aab559c" style="width: 100.0%; height: 100.0%;">Saint Clara County<br>Average Price: $157.53</div>`)[0];
+                popup_d1464ebcd6387cb8ea5e384693c4f867.setContent(html_cd164f821c5a9f3ab06614af8aab559c);
+            
+        
+
+        marker_46b05f5e57f327811636a0877fa86170.bindPopup(popup_d1464ebcd6387cb8ea5e384693c4f867)
+        ;
+
+        
+    
+    
+            var marker_9f6d16b8925864fa41d79426d3bb3222 = L.marker(
+                [32.7157, -117.1611],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_5c7421931788ed55dc49ca621c47add8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9f6d16b8925864fa41d79426d3bb3222.setIcon(icon_5c7421931788ed55dc49ca621c47add8);
+        
+    
+        var popup_8eae53060538ab60a5c93133d2b151d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd01eae32c2ef1626b42134628b907b9 = $(`<div id="html_bd01eae32c2ef1626b42134628b907b9" style="width: 100.0%; height: 100.0%;">San Diego County<br>Average Price: $226.52</div>`)[0];
+                popup_8eae53060538ab60a5c93133d2b151d5.setContent(html_bd01eae32c2ef1626b42134628b907b9);
+            
+        
+
+        marker_9f6d16b8925864fa41d79426d3bb3222.bindPopup(popup_8eae53060538ab60a5c93133d2b151d5)
+        ;
+
+        
+    
+    
+            var marker_a4b25fe9ae27ae8ec7be8844ae344b13 = L.marker(
+                [37.7749, -122.4194],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_232e04710445efdc4697895fda2fadca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a4b25fe9ae27ae8ec7be8844ae344b13.setIcon(icon_232e04710445efdc4697895fda2fadca);
+        
+    
+        var popup_fffe8290d02a56793779473fc4be3cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b01e3ff274bd25943ba4da6d9009c4a = $(`<div id="html_6b01e3ff274bd25943ba4da6d9009c4a" style="width: 100.0%; height: 100.0%;">San Francisco<br>Average Price: $195.44</div>`)[0];
+                popup_fffe8290d02a56793779473fc4be3cc2.setContent(html_6b01e3ff274bd25943ba4da6d9009c4a);
+            
+        
+
+        marker_a4b25fe9ae27ae8ec7be8844ae344b13.bindPopup(popup_fffe8290d02a56793779473fc4be3cc2)
+        ;
+
+        
+    
+    
+            var marker_9e5047b7b8bae375b3d976a4b049f27f = L.marker(
+                [37.5629, -122.3255],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_475682954b7fc7a7e8c5503d4a63cb03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9e5047b7b8bae375b3d976a4b049f27f.setIcon(icon_475682954b7fc7a7e8c5503d4a63cb03);
+        
+    
+        var popup_256f8467ee2be2a3b39a7ca7fd26c69d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_575b01d88146ee9404de3319150f502e = $(`<div id="html_575b01d88146ee9404de3319150f502e" style="width: 100.0%; height: 100.0%;">San Mateo<br>Average Price: $187.81</div>`)[0];
+                popup_256f8467ee2be2a3b39a7ca7fd26c69d.setContent(html_575b01d88146ee9404de3319150f502e);
+            
+        
+
+        marker_9e5047b7b8bae375b3d976a4b049f27f.bindPopup(popup_256f8467ee2be2a3b39a7ca7fd26c69d)
+        ;
+
+        
+    
+    
+            var marker_79b1e6ba059777f8ce4e5ac13e28c3f9 = L.marker(
+                [47.6062, -122.3321],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_06e13914ea8e44fb590039521fbd287f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_79b1e6ba059777f8ce4e5ac13e28c3f9.setIcon(icon_06e13914ea8e44fb590039521fbd287f);
+        
+    
+        var popup_380608a78f2aed05f0fb42d7dfe3ff38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41eca168b3bdb3bc71adca73f6dc68f0 = $(`<div id="html_41eca168b3bdb3bc71adca73f6dc68f0" style="width: 100.0%; height: 100.0%;">Seattle<br>Average Price: $133.66</div>`)[0];
+                popup_380608a78f2aed05f0fb42d7dfe3ff38.setContent(html_41eca168b3bdb3bc71adca73f6dc68f0);
+            
+        
+
+        marker_79b1e6ba059777f8ce4e5ac13e28c3f9.bindPopup(popup_380608a78f2aed05f0fb42d7dfe3ff38)
+        ;
+
+        
+    
+    
+            var marker_fdcc256209c4c4d2a9951de37ee389d9 = L.marker(
+                [40.5795, -74.1502],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_368f86a61979891794c18154457759be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdcc256209c4c4d2a9951de37ee389d9.setIcon(icon_368f86a61979891794c18154457759be);
+        
+    
+        var popup_7ec615a13f767c6fe760f10336ac5d37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3a5a75afb6464aee69cfb654a480b75 = $(`<div id="html_a3a5a75afb6464aee69cfb654a480b75" style="width: 100.0%; height: 100.0%;">Staten Island<br>Average Price: $111.90</div>`)[0];
+                popup_7ec615a13f767c6fe760f10336ac5d37.setContent(html_a3a5a75afb6464aee69cfb654a480b75);
+            
+        
+
+        marker_fdcc256209c4c4d2a9951de37ee389d9.bindPopup(popup_7ec615a13f767c6fe760f10336ac5d37)
+        ;
+
+        
+    
+    
+            var marker_d361e56ad206a2e2d1797635a0b81392 = L.marker(
+                [38.9072, -77.0369],
+                {}
+            ).addTo(map_672d43089966827a6642a9ee6be0a897);
+        
+    
+            var icon_c5458ca613dc89a9f9aa334ea5f4e7bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d361e56ad206a2e2d1797635a0b81392.setIcon(icon_c5458ca613dc89a9f9aa334ea5f4e7bc);
+        
+    
+        var popup_7b3a121ede66983df1c659075db705a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c27067a38680f9c9736219d53bb98209 = $(`<div id="html_c27067a38680f9c9736219d53bb98209" style="width: 100.0%; height: 100.0%;">Washington D.C<br>Average Price: $174.41</div>`)[0];
+                popup_7b3a121ede66983df1c659075db705a1.setContent(html_c27067a38680f9c9736219d53bb98209);
+            
+        
+
+        marker_d361e56ad206a2e2d1797635a0b81392.bindPopup(popup_7b3a121ede66983df1c659075db705a1)
+        ;
+
+        
+    
+</script>
+</html>
