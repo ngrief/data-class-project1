@@ -21,8 +21,6 @@ We used a dataset created by a data sciences student (using InsideAirbnb.com), t
 
 ## Historical 
 
-## Price: What are price statistics for sites between 2008 and 2020?
-
 ## Amenities
 - First we determined the most popular amenities and arranged them into a bar chart 
 - Grouped all of the amenities into basic, luxury, and safety. We assessed if luxury amenities increase the price of a listing. We analyzed the impact on the average price and used visualizations to plot it. 
@@ -32,4 +30,6 @@ We used a dataset created by a data sciences student (using InsideAirbnb.com), t
 - Listed the top 10 amenities by each neighhorhood for comparison. We assebled these values into a bar graph and heat map. 
 - Analyzed the listings and divided them into two categories- listings by superhosts and non-superhosts. These values were assembled into a pie chart. 
 - Used boxplosts to show a price comparision between superhosts and non-superhosts. Used violin plot to visualize price distribution adjusted for outliers. 
-- Assessed the total and monthly review total for superhosts vs non-superhosts. Assessed for frequency of review. 
+- Assessed the total and monthly review total for superhosts vs non-superhosts. Assessed for frequency of review.
+
+  ## Conclusions and Implications
