@@ -35,8 +35,8 @@ We used a dataset created by a data sciences student (using InsideAirbnb.com), t
 - There are extreme outliers in this dataset. However, for the years 2008-2020, the majority of prices per night lie around the median of $125/night.
 - Hosts joining the platform peaked in 2014, similar to prices, increased each year until 2016 due to regulatory pressure leading to changes in how many properties a single host could manage and for how long renters could stay. Then, there was a downturn in both the number of hosts and price per listing in 2020 due to the COVID pandemic.
 - There were strong seasonal booking trends from July to October with a small trend in February-March.
-- Amenities can be divided into basic, luxury, and safety. When a property contains luxury amenities it increases the average price significantly. Properties with luxury amenities on average cost $100 more. The most expensive neighborhoods are completely different than the ones with the most luxury amenities. Las Vegas had the most luxury amenities by far. Luxury amenities increase the price, but are not as impactful on price as location.
-- Metro Area conclusion
+-When a property contains luxury amenities it increases the average price significantly, where properties with luxury amenities on average cost $100 more. The most expensive cities are completely different than the ones with the most luxury amenities. For example, Las Vegas had the most luxury amenities by far, but is not one of the most expensive cities. Luxury amenities increase the price, but are not as impactful on price as location.
+- The Los Angeles metro area leads in the number of hosts (and superhosts), property types, price per neighborhood/city (i.e. Rolling Hills, Bel Air, Malibu) and highest seasonal bookings in October.
 
 ## Implications
 - Investigate how national health crises or economic regulation affect short-term rental property pricing trends.
