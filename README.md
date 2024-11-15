@@ -29,13 +29,14 @@ We used a dataset created by a data sciences student (using InsideAirbnb.com), t
 - We removed rows for which site availability was 0/365 days and for which site price was $0.
 - We edited location column names for clarity and neater visualizations: (‘neighbourhood_groups’ to ‘metro’ and ‘neighborhood’ to ‘city’); changed state names to an abbreviations; concatenated metro and state abbreviation.
 - We formatted date information as dates were in two different formats.
+- We created a a mapping dictionary to combine property types into 7 categories, since there were 132 unique property types in the data set.
 - We generated a variety of DataFrames and visualizations to uncover trends and outliers.
 
 ### Data Analysis
 Data analysis was performed using a variety of libraries including Pandas, Scipy, and Numpy. We used statistical methods to summarize the data and looked for relationships between variables.
 
 ### Data Visualization
-Data visualization was performed using Pandas, Matplotlib, and Seaborn. We used a variety of charts including bar, line, heatmaps, box and whisper to compare variables, show trends over time, and to show possible correlations.
+Data visualization was performed using Pandas, Matplotlib, hvPlot and Seaborn. We used a variety of charts including bar, line, heatmaps, box and whisper to compare variables, show trends over time, and to show possible correlations.
 
 ## Conclusions
 - There are extreme outliers in this dataset. However, for the years 2008-2020, the majority of prices per night lie around the median of $125/night.
